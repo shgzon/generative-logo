@@ -1,3 +1,5 @@
+import processing.pdf.*;
+
   int rlente = 151;
   int glente = 149;
   int blente = 127;
@@ -16,6 +18,7 @@
 
 void setup(){
   size(600,600);                        //screensize width 600 height 600
+  beginRecord(PDF, "generative-logo.pdf");
   background(255);                      //background white
   noStroke();      
   drawHalfmoon();                       //void drawCirkel{}
@@ -53,6 +56,7 @@ void drawHalfmoon(){                    //Background cirkel
     
 
   }
+  endRecord();
 }
 
 
